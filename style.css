@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(73, 73, 73);
+}
+
+
+header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    /* position: fixed; */
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 10px;
+    transition: 0.5s ease-in-out;
+}
+header nav a:hover{
+    transform: scale(1.5s);
+    background-color:rgb(73, 73, 73) ;
+    color: white;
+    border-radius: 10px;
+}
+
+header small{
+    background-color: rgb(73, 73, 73);
+    /* width: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 9px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.input-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 80px 50px;
+    background-color: white;
+    gap: 10px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+form textarea{
+    width: 100%;
+    padding: 50px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+form textarea::placeholder{
+    font-size: 20px;
+}
+
+
+form textarea:focus{
+    border: none;
+    outline: 1px solid yellow;
+}
+
+form div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 10px;
+}
+
+.post{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: rgb(24, 212, 49);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.post:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgb(24, 212, 49);
+}
+
+.clear{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: rgb(58, 24, 212);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.clear:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgb(58, 24, 212) ;
+}
+
+
+.output-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.output-area small{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background-color: white;
+    padding: 50px 30px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.output-area small article p{
+    font-size: 20px;
+    font-weight:500;
+}
+
+
+@media(max-width:450px){
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(73, 73, 73);
+}
+
+
+header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10px;
+    /* position: fixed; */
+}
+
+header h1{
+    font-size: 10px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+header nav a{
+    font-size: 4px;
+}
+
+.input-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 150px;
+    background-color: white;
+    gap: 10px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+form textarea{
+    width: fit-content;
+    padding: 20px 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+form textarea::placeholder{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+form textarea:focus{
+    border: none;
+    outline: 1px solid yellow;
+}
+
+form div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 10px;
+}
+
+.post{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: rgb(24, 212, 49);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.post:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgb(24, 212, 49);
+}
+
+.clear{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: rgb(58, 24, 212);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.clear:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgb(58, 24, 212) ;
+}
+
+
+.output-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.output-area small{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background-color: white;
+    padding: 50px 200px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.output-area small article p{
+font-size: 10px;
+}
+
+}
